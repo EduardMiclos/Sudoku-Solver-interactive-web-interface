@@ -1,0 +1,162 @@
+*{
+  background-color: #929ea1;
+}
+
+
+.title{
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  font-size: 5rem;
+  color: #353a3b;
+}
+
+.subtitle{
+  cursor: default;
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  font-size: 1.5rem;
+  margin: -5px;
+  color: #353a3b
+}
+
+span{
+  transition: 0.3s;
+}
+
+span:hover{
+  cursor: default;
+  color: #4a666b;
+}
+
+
+#grid{
+  margin: 1em auto;
+  color: #292b2b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#grid, .cell{
+  border: 1px solid #4b8894;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+.cell{
+  height: 30px;
+  width: 30px;
+  transition: 0.3s;
+}
+
+::placeholder{
+  color:black;
+}
+
+.cell input{
+  font-family: 'Montserrat', sans-serif;
+  width:30px;
+  height: 30px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: none;
+}
+
+.cell input{
+  outline: none;
+}
+
+
+.cell:first-child{
+  border-left: 1px solid #14525e;
+}
+
+.cell:nth-child(3n) {
+  border-right: 1px solid #14525e;
+}
+
+.row:first-child td{
+  border-top: 1px solid #14525e;
+}
+
+.row:nth-child(3n) td {
+  border-bottom: 1px solid #14525e;
+}
+
+button{
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  display: in-line block;
+  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: #815196;
+  font-family: 'Open Sans Condensed';
+  transition: 0.2s;
+}
+
+button:hover{
+  background-color: rgba(149, 117, 161, 0.5);
+}
+
+button:focus{
+  outline: none;
+  background: #8c6c9e;
+}
+
+#reset{
+  padding: 12px 30px;
+  text-align: center;
+  margin-left: -155px;
+}
+
+#solve{
+  padding: 12px 38px;
+  text-align: center;
+  margin-left: 45px;
+}
+
+
+.form{
+  visibility: hidden;
+  position: absolute;
+  top: 23em;
+  left: 50em;
+}
+
+#numberInput input{
+  text-align: center;
+  border: 1px solid #37313b;
+  width: 6em;
+  height: 2em;
+  border-radius: 40px;
+  background-color: #a196b3;
+  color: white;
+  opacity: 0.6;
+}
+
+#numberInput input:focus{
+  opacity: 0.9;
+  outline: none;
+  border: 1px solid black;
+}
+
+#submit input{
+  opacity: 0.6;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 10px;
+  background-color: #4f3b70;
+}
+
+#submit input:hover{
+  cursor: pointer;
+}
